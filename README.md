@@ -1,25 +1,33 @@
 # InstagramWidgetNoAPI
+
 This code able to deliver to your web page all public info about your or any other Instagram account.
 You can reach:
-1)profile pic.
-2)user feed
-3)user bio
-4)counters (following/followers/posts)
-5)id in Instagram data base
-6)counters for each post
-7)short code to post (www.instagram.com/p/CODE)
+- 1)profile pic.
+- 2)user feed
+- 3)user bio
+- 4)counters (following/followers/posts)
+- 5)id in Instagram data base
+- 6)counters for each post
+- 7)short code to post (www.instagram.com/p/CODE)
 
-# Usage
-IN HTML:
-`
+## Installation
+Add this line to HTML
+
+```html
+<script src="js/InstafeedNoAPI.js"></script>
+```
+
+## Usage
+
+```js
 getInstaProfile("bmw", function(json) {
     console.log(json);
     // do any other actions here
 });
-`
+```
 
-Response:
-`
+## Response
+```json
 {
   "config": {
     "csrf_token": "4mP5SkxJVfUqZ7ZZJz1z1gqoeyLRSy7S",
@@ -1520,4 +1528,7 @@ Response:
   "bundle_variant": "base",
   "probably_has_app": false
 }
-`
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
