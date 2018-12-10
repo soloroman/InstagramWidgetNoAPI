@@ -17,8 +17,3 @@ function getInstaProfile(username, callback){
         callback(json);
     });
 }
-
-getInstaProfile("bmw", function(json) {
-    console.log(json);
-});
-
