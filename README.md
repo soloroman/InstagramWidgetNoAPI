@@ -20,9 +20,15 @@ Add this line to HTML
 ## Usage
 
 ```js
+// SAMPLE
 getInstaProfile("bmw", function(json) {
     console.log(json);
     // do any other actions here
+});
+
+// GET PROFILE BIO
+getInstaProfile("bmw", function(json) {
+    console.log(json.entry_data.ProfilePage[0].graphql.user.biography);
 });
 ```
 
