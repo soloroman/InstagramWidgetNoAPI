@@ -13,8 +13,7 @@ function getInstaProfile(username, callback){
     httpGetAsync("https://www.instagram.com/"+username, function (response) {
         let result = response.split("window._sharedData = ");
         result = result[1].split(";</script>");
-        //let json = JSON.parse(result[0]);
-        let json = result[0];
+        json = JSON.parse(result[0]);
         callback(json);
     });
 }
