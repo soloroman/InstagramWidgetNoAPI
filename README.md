@@ -29,6 +29,7 @@ getInstaProfile("bmw", function(json) {
 // GET PROFILE BIO
 getInstaProfile("bmw", function(json) {
     console.log(json.entry_data.ProfilePage[0].graphql.user.biography);
+    // RESULT IS: Welcome to the official BMW account, home of Sheer Driving Pleasure on Instagram. Share your photos using #BMWrepost for the chance to get featured.
 });
 ```
 
